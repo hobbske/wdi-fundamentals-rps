@@ -1,0 +1,39 @@
+***************************************************************
+
+QUESTION: What is wrong with this functions statement?
+ANSWER: 
+
+function getWinner(playerMove,computerMove) {
+    var winner;
+}
+getWinner();
+if(playerMove === computerMove) {
+            winner = 'Tie';
+        }else if(getWinner('rock','scissors') || getWinner('scissors','paper')) {
+            winner = 'Player';
+        }else {
+            winner = 'Computer';
+    }
+***************************************************************
+
+QUESTION: What is wrong with this if/else statement?
+ANSWER: You have to use === instead of = .
+
+var playerMove = 'scissors';
+var computerMove = 'paper';
+
+        if(playerMove === computerMove) {
+            winner = 'Tie';
+        } else if(((playerMove = 'rock') && (computerMove = 'scissors')) || ((playerMove = 'scissors') && (computerMove = 'paper'))) {
+            winner = 'Player';
+        } else {
+            winner = 'Computer';
+    }
+
+
+
+
+
+***************************************************************
+
+***************************************************************
